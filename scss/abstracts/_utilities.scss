@@ -1,0 +1,42 @@
+@use './variables' as *;
+@use 'sass:map';
+
+$screen: (
+  'medium': (
+    768px,
+  ),
+  'large': (
+    1440px,
+  ),
+);
+
+.centered {
+  max-width: clamp(1rem, 327px + 8rem, 99vw);
+  // max-width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-top: 24px;
+  // text-align: center;
+}
+
+@media (min-width: map.get($screen, 'medium')) {
+  .centered {
+    max-width: 450px;
+    // padding-top: 202px;
+  }
+}
+
+@media (min-width: map.get($screen, 'large')) {
+  .centered {
+    min-width: 1110px;
+    // padding-top: 187px;
+  }
+}
+
+.ff-primary {
+  font-family: 'Bellefair', serif;
+}
+
+.ff-secondary {
+  font-family: 'Barlow Condensed', sans-serif;
+}

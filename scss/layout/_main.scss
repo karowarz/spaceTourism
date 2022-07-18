@@ -1,0 +1,9 @@
+.main {
+  min-height: 27.6rem;
+  text-align: center;
+  &__text {
+    &--uppercase {
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  // padding-top: 2.4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  &__logo {
+    padding-top: 2.4rem;
+  }
+
+  // &__nav {
+  // position: absolute;
+  // right: 0;
+  // background-color: hsl(0 0% 0% / 0.75);
+  // backdrop-filter: blur(1rem);
+  // min-height: 100vh;
+  // width: 25.4rem;
+  // display: flex;
+  // font-size: 1.6rem;
+  // text-transform: uppercase;
+  // padding-top: 11.8rem;
+  // display: none;
+  // align-self: start;
+  // @include screen(medium){
+  //   display: flex;
+  // }
+
+  li {
+    list-style-type: decimal-leading-zero;
+  }
+}
+// }

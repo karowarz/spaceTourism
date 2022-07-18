@@ -1,0 +1,45 @@
+.destination {
+  background-image: url('../../assets/destination/background-destination-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  &__img {
+    aspect-ratio: 1;
+    width: 50vw;
+  }
+
+  &__description {
+    text-transform: none;
+    text-align: center;
+  }
+  &__navigation {
+    display: flex;
+    width: 23.75rem;
+    justify-content: space-between;
+    padding-left: 0;
+    &--element {
+      text-align: left;
+      list-style-type: none;
+      cursor: pointer;
+    }
+  }
+  &__info {
+    &--title {
+      text-align: center;
+    }
+    &--number {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// $spacing-235: 2.35ch;
+// $spacing-270: 2.7ch;
+// $spacing-475: 4.75ch;
+
+$colors: (
+  100: hsl(0, 0%, 100%),
+  200: hsl(231, 77%, 90%),
+  300: hsl(230, 35%, 7%),
+);
+
+$weights: (
+  light: 300,
+  regular: 400,
+  bold: 500,
+);
+
+$font-sizes: (
+  100: 1.4rem,
+  200: 1.6rem,
+  300: 2.8rem,
+  400: 3.2rem,
+  500: 5.6rem,
+  600: 10rem,
+  700: 15rem,
+);
+
+$characters: (
+  100: 2.35ch,
+  200: 2.7ch,
+  300: 4.75ch,
+);
+
+@each $color, $value in $colors {
+  .clr-txt-#{$color} {
+    color: $value;
+  }
+}
+
+@each $size, $value in $font-sizes {
+  .fz-#{$size} {
+    font-size: clamp(1rem, 20vw, #{$value});
+  }
+}
+
+@each $weight, $value in $weights {
+  .fw-#{$weight} {
+    font-weight: #{$value};
+  }
+}
+
+@each $character, $value in $characters {
+  .spacing-#{$character} {
+    letter-spacing: #{$value};
+  }
+}
